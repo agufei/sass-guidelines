@@ -1,27 +1,9 @@
 
 # 工具
 
-和 Sass 一样受欢迎的 CSS 预处理器的优秀之处就在于，它提供了包括框架、插件、库和工具在内的整套开发环境。Sass 诞生 8 年以来，其本身的特性和 [everything that can be written in Sass has been written in Sass](http://hugogiraudel.com/2014/10/27/rethinking-atwoods-law/) 一文中的观点越来越相近。
+最小程度的依赖于各种工具。在 Sass 中很少需要外部依赖。
 
-不过，我的建议是最小程度的依赖于各种工具。管理依赖可能会是你特别不想面对的事情。此外，在 Sass 中很少需要外部依赖。
-
-## Compass
-
-[Compass](http://compass-style.org/) 是 [Sass 中主要的框架](http://www.sitepoint.com/compass-or-bourbon-sass-frameworks/)。其开发者 [Chris Eppstein](https://twitter.com/chriseppstein)，是 Sass 的两位核心开发者之一。如果你想听一下我的看法，我想说这个框架一直很流行。
-
-不过，[我已经不再使用 Compass 了](http://www.sitepoint.com/dont-use-compass-anymore/)，主要原因是它很大程度上拖慢了 Sass。Ruby Sass 本身就比较慢，所以在此之上增加更多功能并无益处。
-
-实际上，我们通常只使用了框架本身的一点点功能，而完整的 Compass 是庞大的。混合宏的跨浏览器兼容功能也只是冰山一角。数学函数、图像辅助、幽灵图……使用这个优秀的工具有太多的好处了。
-
-不幸的是，这就是所有的语法糖而且没有一个是杀手级的特性。精灵图生成器虽然*非常优秀*，但也会报出一两个错误。不过 [Grunticon](https://github.com/filamentgroup/grunticon) 和 [Grumpicon](http://grumpicon.com/) 就运行的很好，而且它们还有可以被插入到构建过程的优势。
-
-虽然我不建议使用 Compass，但我也不会禁止使用它，特别是当它不兼容 LibSass 的时候（即使它正朝这个方向努力）。如果你感觉使用起来还不错，这当然可以，但是我认为最终你也不会从中收获更多。
-
-<div class="note">
-  <p>Ruby Sass 目前正着手进行一些很棒的优化，目标是通过运用诸多函数和混合宏实现具有深度逻辑的样式。它们应该显著改善性能，而这往往是 Compass 和其他框架拖慢 Sass 的原因。</p>
-</div>
-
-## 栅格系统
+## 栅格系统 **【_参考_】**
 
 随着响应式网页设计地遍地开花，栅格系统布局已经成为了一种必然选择。为了固定大小并使设计风格统一，我们通常使用网格来给元素布局。为了避免反复地布局工作，一些非凡的想法认为应该使它们保持可复用性。
 
@@ -33,7 +15,7 @@
 
 或者你可以处理地更轻松些，就像使用 [CSSWizardry Grids](https://github.com/csswizardry/csswizardry-grids) 的感觉。总而言之，任何选择都不会对你的代码风格有过多影响，所以这一点上一切取决于你。
 
-## SCSS-lint
+## SCSS-lint **【_推荐_】**
 
 审查代码是非常重要的事情。通常来说，遵从一份样式指南的规范可以帮助减少代码质量上的问题，但是没有人的工作是无懈可击的，何况总有些地方需要改善。所以，可以认为，审查代码和注释文档一样重要。
 
@@ -47,5 +29,4 @@
 
 <div class="note">
   <p>如果你想将 SCSS-lint 插入到 Grunt 构建过程中，那么 Grunt 插件 <a href="https://github.com/ahmednuaman/grunt-scss-lint">grunt-scss-lint</a> 一定会对你有所帮助。</p>
-  <p>此外，如果你在寻找一个运行 SCSS-lint 的简洁工具，那么 <a href="http://thoughtbot.com/">Thoughtbot</a> (Bourbon, Neat...) 正在开发的 <a href="https://houndci.com/">Hound</a> 也会对你有所帮助。</p>
 </div>
