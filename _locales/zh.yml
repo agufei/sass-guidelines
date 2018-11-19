@@ -12,7 +12,7 @@ configuration:
 # For more information about the context around these translations, refer to
 # _locales/en.yml
 translations:
-  baseline: "小米信息部前端组Sass规范"
+  baseline: "推荐Sass规范"
   footer_content: ""
 
   aside_title: "设置"
